@@ -1,0 +1,105 @@
+.icon-text {
+    color: rgb(137, 207, 240);
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.NavBarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 30px;
+    background-color: rgb(34, 32, 32);
+    box-shadow: 0 5px 15px rgba(105, 25, 25, 0.25);
+    width: 90%;
+    height: 80px;
+    border-radius: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.navBarRight {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 12px;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(137, 207, 240);
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.fa-bars,
+.fa-times {
+    color: rgb(137, 207, 240);
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .icon-text {
+        font-size: 1.5rem;
+    }
+
+    .NavBarItems {
+        border-radius: 15px;
+        width: 80%;
+        height: 60px;
+        z-index: 1;
+    }
+
+    .navBarRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-shadow: 0 16px 32px 0 rgba(31, 38, 135, 0.37);
+        border-radius: 15px;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        transition: 0.8s ease-out;
+    }
+
+    .navBarRight.active {
+        max-height: 400px;
+        background-color: black;
+    }
+
+
+    .nav-link {
+        display: block;
+        padding: 1rem 0;
+        color: rgb(137, 207, 240);
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 2;
+    }
+}

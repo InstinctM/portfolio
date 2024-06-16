@@ -1,0 +1,81 @@
+#projects {
+    display: block;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.project-intro-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 50px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(2, 600px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.project {
+    position: relative;
+    padding: 20px 20px 0 20px;
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+
+.project-num {
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.project-button {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 50%;
+    color: rgb(160, 160, 160);
+    font-size: 28px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.project-title {
+    color: rgb(137, 207, 240);
+}
+
+.project-description {
+    color: rgb(245, 245, 220);;
+}
+
+@media screen and (max-width: 1200px){
+    .project-container {
+        display: grid;
+        grid-template-rows: repeat(4, 300px);
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+}

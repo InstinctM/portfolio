@@ -1,0 +1,276 @@
+#contacts {
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 245, 220);
+    padding-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    width: 800px;
+    margin-top: 0;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.email-title {
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: rgb(137, 207, 240);
+}
+
+.email-desc {
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.input-row {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.input-message-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input,
+.input-message {
+    padding: 1px 10px;
+    font-size: 1rem;
+}
+
+.input-message {
+    padding-top: 10px;
+}
+
+input,
+textarea {
+    background-color: rgb(16, 16, 18);
+    color: white;
+    border: 1px solid rgb(46, 46, 53);
+    border-radius: 10px;
+    margin: 12px 15px;
+    width: 340px;
+    height: 50px;
+}
+
+textarea {
+    margin: 0 25px 20px 25px;
+    width: 730px;
+    height: 200px;
+    resize: none;
+}
+
+::placeholder {
+    color: rgb(200, 200, 200);
+    font-size: 0.95rem;
+}
+
+.send-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.send-button, .sent-button {
+    background-color: rgb(160, 160, 160);
+    width: 100px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-button svg, .sent-button svg {
+    margin-left: 5px;
+}
+
+.send-button:hover {
+    background-color: white;
+}
+
+.sent-button {
+    background-color: rgb(0, 255, 153);
+    cursor: not-allowed;
+}
+
+.vl-container {
+    display: block;
+}
+
+.vertical-line {
+    border-left: 3px solid rgb(88, 88, 88);
+    border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(88, 88, 88) 48%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+    height: 500px;
+    margin: 40px 100px 0;
+}
+
+.social-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-intro {
+    margin: 100px 0 30px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.social-button-container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-button {
+    background-color: transparent;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 50%;
+    color: rgb(160, 160, 160);
+    font-size: 28px;
+    padding: 10px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.linkedin:hover {
+    background-color: white;
+    color: rgb(10, 102, 194);
+}
+
+.github:hover {
+    background-color: black;
+    color: white
+}
+
+.discord:hover {
+    background-color: rgb(10, 102, 194);
+    color: white;
+}
+
+.instagram:hover {
+    color: white;
+    background: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
+}
+
+@media screen and (max-width: 1400px) {
+    .contacts-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-title,
+    .email-desc {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .email-title {
+        margin-bottom: 5px;
+    }
+
+    .email-desc {
+        font-size: 0.9rem;
+    }
+
+    .email-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email-form {
+        width: 100%;
+        max-width: 700px;
+        align-items: center;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-message-container {
+        width: 100%;
+    }
+
+    .input-group {
+        display: block;
+    }
+
+    .input,
+    .input-message {
+        font-size: 0.9rem;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        height: 50px;
+        margin: 10px;
+    }
+
+    textarea {
+        margin: 0px;
+        height: 250px;
+    }
+
+    .send-button-container {
+        margin: 1rem;
+    }
+
+    .vl-container {
+        display: none;
+    }
+
+    .social-container {
+        width: 80%;
+    }
+
+    .social-intro {
+        font-size: 0.9rem;
+    }
+
+    .social-button-container {
+        width: 100%;
+    }
+}
