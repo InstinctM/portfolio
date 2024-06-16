@@ -80,6 +80,7 @@
         height: 60%;
         max-width: 300px;
         max-height: 300px;
+        box-shadow: 3px 5px 5px rgba(130, 30, 30, 0.25);
     }
 }
 
