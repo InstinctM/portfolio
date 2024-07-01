@@ -14,7 +14,8 @@
 .skills-intro {
     text-align: center;
     margin-bottom: 3vh;
-    color: rgb(245, 245, 220);;
+    color: rgb(245, 245, 220);
+    ;
 }
 
 .skills-container {
@@ -56,6 +57,10 @@
 }
 
 @media screen and (max-width: 800px) {
+    #skills {
+        padding-top: 9vh;
+    }
+
     .skills-intro {
         font-size: 0.9rem;
     }

@@ -1,14 +1,14 @@
 #projects {
     display: block;
     color: white;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
 }
 
 .project-intro-title {
     font-size: 2rem;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-bottom: 50px;
 }
 
@@ -63,6 +63,10 @@
 }
 
 @media screen and (max-width: 1200px){
+    #projects {
+        padding-top: 1vh;
+    }    
+
     .project-container {
         display: grid;
         grid-template-rows: repeat(4, 300px);

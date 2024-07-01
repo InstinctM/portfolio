@@ -197,6 +197,10 @@ textarea {
         justify-content: center;
     }
 
+    .contacts-title {
+        margin-bottom: 40px;
+    }
+
     .email-title,
     .email-desc {
         text-align: center;

@@ -45,6 +45,8 @@
     border: 3px solid rgb(100, 100, 100);
     box-shadow: 10px 5px 5px rgba(130, 30, 30, 0.25);
     border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 950px) {
