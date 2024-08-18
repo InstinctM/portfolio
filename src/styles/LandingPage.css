@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30vh;
-    padding-bottom: 20vh;
+    padding-top: 30dvh;
+    padding-bottom: 20dvh;
 }
 
 .landing-content {
     display: flex;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 10dvh;
     max-width: 1200px;
 }
 
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 950px) {
     #landing {
-        padding-top: 10vh;
+        padding-top: 10dvh;
     }
 
     .landing-content {
@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 950px) and (orientation: landscape) {
     .landing-content {
-        margin-top: 5vh;
+        margin-top: 5dvh;
     }
 
     .pic-container {
