@@ -5,6 +5,8 @@
     align-items: center;
     text-align: center;
     padding-top: 10dvh;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .about-container {
@@ -107,7 +109,11 @@
 }
 
 @media screen and (max-width: 800px) {
-    z .about-desc {
+    #about {
+        height: auto;
+    }
+
+    .about-desc {
         font-size: 0.9rem;
     }
 

@@ -1,8 +1,10 @@
 #skills {
     display: block;
     color: white;
-    padding-top: 12dvh;
+    padding-top: 20dvh;
     padding-bottom: 10dvh;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .skills-title {
@@ -58,6 +60,7 @@
 
 @media screen and (max-width: 800px) {
     #skills {
+        height: auto;
         padding-top: 9dvh;
     }
 

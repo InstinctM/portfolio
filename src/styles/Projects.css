@@ -3,6 +3,8 @@
     color: white;
     padding-top: 10dvh;
     padding-bottom: 10dvh;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .project-intro-title {
@@ -59,13 +61,15 @@
 }
 
 .project-description {
-    color: rgb(245, 245, 220);;
+    color: rgb(245, 245, 220);
+    ;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     #projects {
         padding-top: 1dvh;
-    }    
+        height: auto;
+    }
 
     .project-container {
         display: grid;
